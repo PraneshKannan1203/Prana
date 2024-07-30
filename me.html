@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praneshwaran Kannan-Personal Portfolio</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+<div id= "header">
+    <div class="container">
+        <nav>
+        <img src="images/Logo.png" alt="logo">
+        <ul>
+            <li><a href= "#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+        </nav>
+        <div class="header-text">
+             <p> | App Developer | Python Enthusiast | Machine Learning Enthusiast |</p>
+             <h1>Hi, I'm <span>Praneshwaran</span> Kannan<br>From Coimbatore,</h1>
+        </div>
+    </div>
+</div>
+<div id ="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/Me.png">
+            </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <br>
+                    <br>
+                    <p>Aspiring AI developer with foundational knowledge in several key technologies. 
+                    <br>Proficient in HTML and CSS, I’ve crafted responsive web page about my Personal Portfolio and understand the importance of user-friendly design.
+                    <br>My quite familiarity with Dart and Flutter allows me to build cross-platform mobile applications efficiently. Additionally, 
+                    I’ve explored MongoDB for NoSQL database management, and
+                    <br>I’m eager to delve deeper into data modeling and querying.
+                    <br>My exposure to TensorFlow enables me to experiment with machine learning models, while my grasp of cloud technologies (AWS, Google Cloud) 
+                    ensures scalability and reliability. 
+                    <br>Lastly, I’ve dipped my toes into Selenium for web automation and testing. Excited to continue learning and contributing to innovative projects.</p> <br>
+
+                    <div id class="tab-titles">
+                        <p class ="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class ="tab-links " onclick="opentab('skills')">Skills</p>
+                        <p class ="tab-links " onclick="opentab('internship')">Internship</p>
+                        <p class ="tab-links " onclick="opentab('achievements')">Achievements</p>
+
+                    </div>
+                
+   
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>Under Graduation.</span><br>Hindusthan College Of Arts and Science.<br>B.Sc.Artificial Intelligence & Machine Learning.<br>CGPA-86.2%<br>2022-Present.</li><br>
+                    <li><span>Higher Secondary Schooling.</span><br>R.K.SreeRangammal Kalvi Nilayam Higher Secondary School<br>Percentage-61.5%<br>2020-2022.</li><br>
+                    <li><span>Secondary Schooling.</span><br>Milton Matriculation School.<br>Percentage-61%<br>2020.</li><br>
+                </ul>    
+                </div>
+            <div class="tab-contents" id="skills">
+                <ul>
+                    <li><span>Testing Tool</span>- Selenium.<br>
+                    <br>
+                    <li><span>RPA Tool</span>-Automation Anywhere.<br>
+                    <br>
+                    <li><span>Programming Skills</span><br>Python, R, C++<br>Dart.Flutter<br><span>Markup Language</span>HTML,CSS.<br>
+                    <br>
+                    <li><span>Technical Skills</span><br>Data models training,<br>Cloud Architecture.MongoDB<br>
+                    <br>
+                    <li><span>Software And tools.</span><br>Microsoft Word,Excel,PowerBI,Powerpoint,<br>Weka.VS Code,Jupyter notebook,Git,GitHub<br>
+                </ul>    
+            </div>
+            <div class="tab-contents" id="internship">
+                <ul>
+                <li><span>Training and validating</span><br>InternzLearn Academy(Bengaluru).
+                <br>Developed a strong foundation in Natural Language Processing (NLP) and advanced linguistic platforms (LLP),<br>
+                 enhancing skills in text analysis, language modeling, and machine learning algorithms.<br>
+                 Gained hands-on experience with Python programming<br>
+                  <br>March-May 2024.</li><br>
+
+                <li><span>Data Testing and Developer intern</span><br>BLitz-Tech Academy(Gandhipuram, Coimbatore)<br>•	Working with the YOLO model to detect objects within images or 
+                video frames.Analyzing the performance<br>of the model and suggesting improvements.Downloading and labeling images of specific objects to create<br>
+                a dataset for training the YOLO mode<br>
+                <br>September 2023</li><br>
+                    
+                <li><span>KLA technologies</span><br>VPC Infrastructure Intern.<br>Collaborated with cross-functional teams to design and implement secure VPC (Virtual Private Cloud)<br>
+                architectures with VPN connectivity to on-premises networks.
+                <br>
+                <br>May-June 2024.</li><br>
+                </ul>
+            </div>
+            <div class="tab-contents" id="achievements">
+                <ul>
+                    <li><span>Achieving Gold category award.</span><br>In an innovation and research expo InventX 2023 Multimedia university<br>Malaysia.</li><br>
+                    <li><span>Most Voted invention in the Expo.</span><br>For the prototype named DOZED-OFF an IOT Based Sleep Inducer for post traumatic and mentally disturbed people.<br>InventX 2023 Multimedia university<br>Malaysia.</li><br>
+                    <li><span>Best Paper Presentation.</span><br>Inter-College meet<br>KPR college of technology.</li><br>
+                </ul>    
+            </div>
+        </div>
+        </div>
+    </div>    
+</div>
+<script>
+    
+    Var tablinks.documentsGetElementsByClassName("tab-links");
+    Var tablinks.documentsGetElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontentss){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+        event.currenTarget.classList.add("active-tab");
+        document.getElementsById(tabname).classList.add("active-link");
+    }
+
+</script>
+
+<div class="container">
+        <div class = "contact-left">
+        <h1 class="subtitle">Contact Me </h1>
+        <p><i class="fa-solid fa-paper-plane"></i>praneshkannan996@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>9600519422</p>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61552983570667"><i class="fa-brands fa-facebook"></i></a>
+        <a href="linkedin.com/in/praneshwaran-kannan-338527306"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/praneshwarankannan?igsh=MXZ5dWNoOWIxYWJ3Nw=="><i class="fa-brands fa-instagram"></i></a>   
+        </div>
+
+                    <div class = "contact-right"></div>
+                    .<form>
+                        <input type="text" name="Name" Placeholder="YOUR NAME" required>
+                        <input type="email" name="email" Placeholder="YOUR EMAIL" required>
+                        .<textarea name="Message" rows="6" Placeholder="YOUR MESSAGE"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+        </div>
+
+</body>
+</html>
