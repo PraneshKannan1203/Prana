@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praneshwaran Kannan - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
@@ -9,19 +11,20 @@
 <div id= "header">
     <div class="container">
         <nav>
-        <img src="images/Logo.png" alt="logo">
-        <ul>
+        <img src="images/Logo.png" alt="logo" class="logo">
+        <ul id="sidemenu">
             <li><a href= "#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#internship">Internship</a></li>
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
-            
         </ul>
+        <i class="fas fa-times" onclick="closemenu()" id="close-menu"></i>
+        <i class="fas fa-bars" onclick="openmenu()" id="menu-icon"></i>
         </nav>
         <div class="header-text">
-             <p> App Developer | Python Enthusiast | Machine Learning Enthusiast |</p>
+             <p> App Developer | Python Enthusiast | Machine Learning Enthusiast</p>
              <h1>Hi, I'm <span>Praneshwaran</span> Kannan</h1>
         </div>
     </div>
@@ -34,7 +37,6 @@
             </div>
                 <div class="about-col-2">
                     <h1>About Me</h1>
-                    <br>
                     <br>
                     <p>Aspiring AI developer with foundational knowledge in several key technologies. 
                     <br>Proficient in HTML and CSS, I’ve crafted responsive web page about my Personal Portfolio and understand the importance of user-friendly design.
@@ -115,13 +117,34 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
+    // Mobile menu functions
+    function openmenu(){
+        document.getElementById("sidemenu").style.right = "0";
+        document.getElementById("close-menu").style.display = "block";
+        document.body.style.overflow = "hidden"; // Prevent background scrolling
+    }
+
+    function closemenu(){
+        document.getElementById("sidemenu").style.right = "-200px";
+        document.getElementById("close-menu").style.display = "none";
+        document.body.style.overflow = "auto"; // Restore scrolling
+    }
+
+    // Close menu when clicking on a menu item
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuLinks = document.querySelectorAll('#sidemenu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closemenu);
+        });
+    });
+
 </script>
 
 <div id="contact" class="container">
     <div class="contact-left">
         <h1 class="subtitle">Contact Me</h1>
-        <p><i class="fa-solid fa-paper-plane"></i>praneshkannan996@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i>9600519422</p>
+        <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:praneshkannan996@gmail.com">praneshkannan996@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i><a href="tel:+919600519422">9600519422</a></p>
         <div class="social-icons">
             <a href="https://github.com/PraneshKannan1203/" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/praneshwaran-kannan-338527306" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
