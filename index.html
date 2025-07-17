@@ -1,28 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praneshwaran Kannan-Personal Portfolio</title>
-    <link rel="stylesheet"href="style.css">
+    <title>Praneshwaran Kannan - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <div id= "header">
     <div class="container">
         <nav>
-        <img src="images/Logo.png" alt="logo">
-        <ul>
+        <img src="images/Logo.png" alt="logo" class="logo">
+        <ul id="sidemenu">
             <li><a href= "#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#internship">Internship</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
-            
         </ul>
+        <i class="fas fa-times" onclick="closemenu()" id="close-menu"></i>
+        <i class="fas fa-bars" onclick="openmenu()" id="menu-icon"></i>
         </nav>
         <div class="header-text">
-             <p> | App Developer | Python Enthusiast | Machine Learning Enthusiast |</p>
-             <h1>Hi, I'm <span>Praneshwaran</span> Kannan<br>From Coimbatore,</h1>
+             <p> AI & ML Enthusiast | Bridging Human-Machine Intraction</p>
+             <h1>Hi, I'm <span>Praneshwaran</span> Kannan</h1>
         </div>
     </div>
 </div>
@@ -30,74 +34,74 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-            <img src="images/Me.png">
+            <img src="images/Me.png" alt="Praneshwaran Kannan Profile Picture">
             </div>
                 <div class="about-col-2">
                     <h1>About Me</h1>
                     <br>
+                    <p>Passionate AI and Machine Learning enthusiast with a solid academic foundation in Artificial Intelligence and Machine Learning technologies. 
+                    <br>Skilled in Python and R programming, with practical experience in developing machine learning models and designing cloud-based architectures. 
+                    <br>Proficient in web automation using Selenium and computer vision with YOLO object detection frameworks. 
+                    <br>Recognized for innovative problem-solving abilities, including creating an award-winning IoT prototype at InventX 2023. 
+                    <br>Committed to leveraging technology to create impactful solutions and contribute to the advancement of AI-driven innovations.</p>
                     <br>
-                    <p>Aspiring AI developer with foundational knowledge in several key technologies. 
-                    <br>Proficient in HTML and CSS, I’ve crafted responsive web page about my Personal Portfolio and understand the importance of user-friendly design.
-                    <br>My quite familiarity with Dart and Flutter allows me to build cross-platform mobile applications efficiently. Additionally, 
-                    I’ve explored MongoDB for NoSQL database management, and
-                    <br>I’m eager to delve deeper into data modeling and querying.
-                    <br>My exposure to TensorFlow enables me to experiment with machine learning models, while my grasp of cloud technologies (AWS, Google Cloud) 
-                    ensures scalability and reliability. 
-                    <br>Lastly, I’ve dipped my toes into Selenium for web automation and testing. Excited to continue learning and contributing to innovative projects.</p> <br>
 
-                    <div id class="tab-titles">
-                        <p class ="tab-links active-link" onclick="opentab('education')">Education</p>
-                        <p class ="tab-links " onclick="opentab('skills')">Skills</p>
-                        <p class ="tab-links " onclick="opentab('internship')">Internship</p>
-                        <p class ="tab-links " onclick="opentab('achievements')">Achievements</p>
-
+                    <div id="tab-titles" class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
                     </div>
                 
-   
-            <div class="tab-contents active-tab" id="education">
+            <div class="tab-contents" id="education">
                 <ul>
-                    <li><span>Under Graduation.</span><br>Hindusthan College Of Arts and Science.<br>B.Sc.Artificial Intelligence & Machine Learning.<br>CGPA-86.2%<br>2022-Present.</li><br>
-                    <li><span>Higher Secondary Schooling.</span><br>R.K.SreeRangammal Kalvi Nilayam Higher Secondary School<br>Percentage-61.5%<br>2020-2022.</li><br>
-                    <li><span>Secondary Schooling.</span><br>Milton Matriculation School.<br>Percentage-61%<br>2020.</li><br>
-                </ul>    
-                </div>
-            <div class="tab-contents" id="skills">
-                <ul>
-                    <li><span>Testing Tool</span>- Selenium.<br>
-                    <br>
-                    <li><span>RPA Tool</span>-Automation Anywhere.<br>
-                    <br>
-                    <li><span>Programming Skills</span><br>Python, R, C++<br>Dart.Flutter<br><span>Markup Language</span>HTML,CSS.<br>
-                    <br>
-                    <li><span>Technical Skills</span><br>Data models training,<br>Cloud Architecture.MongoDB<br>
-                    <br>
-                    <li><span>Software And tools.</span><br>Microsoft Word,Excel,PowerBI,Powerpoint,<br>Weka.VS Code,Jupyter notebook,Git,GitHub<br>
+                    <li><span>Under Graduation:</span><br>Hindusthan College Of Arts and Science<br>B.Sc. Artificial Intelligence & Machine Learning<br>CGPA: 82%<br>2022-2025</li>
+                    <li><span>Higher Secondary Schooling:</span><br>R.K. SreeRangammal Kalvi Nilayam Higher Secondary School<br>Percentage: 61.5%<br>2020-2022</li>
+                    <li><span>Secondary Schooling:</span><br>Milton Matriculation School<br>Percentage: 61%<br>2020</li>
                 </ul>    
             </div>
-            <div class="tab-contents" id="internship">
+            <div class="tab-contents" id="skills">
                 <ul>
-                <li><span>Training and validating</span><br>InternzLearn Academy(Bengaluru).
-                <br>Developed a strong foundation in Natural Language Processing (NLP) and advanced linguistic platforms (LLP),<br>
-                 enhancing skills in text analysis, language modeling, and machine learning algorithms.<br>
-                 Gained hands-on experience with Python programming<br>
-                  <br>March-May 2024.</li><br>
-
-                <li><span>Data Testing and Developer intern</span><br>BLitz-Tech Academy(Gandhipuram, Coimbatore)<br>•	Working with the YOLO model to detect objects within images or 
-                video frames.Analyzing the performance<br>of the model and suggesting improvements.Downloading and labeling images of specific objects to create<br>
-                a dataset for training the YOLO mode<br>
-                <br>September 2023</li><br>
+                    <li><span>Programming Languages:</span> Python, R</li>
+                    <li><span>AI/ML Frameworks:</span> LangChain, TensorFlow, YOLO Model, LLM (Large Language Models), OpenCV</li>
+                    <li><span>Specialized Technologies:</span> Natural Language Processing (NLP), Machine Learning</li>
+                    <li><span>Data Analytics:</span> PowerBI, Excel, Data Visualization, Statistical Analysis, Data Mining</li>
+                    <li><span>AI Tools:</span> ChatGPT, Claude, Gemini, Automated AI Workflows, Model Fine-tuning</li>
+                    <li><span>Automation & Testing:</span> Selenium, Automation Anywhere</li>
+                    <li><span>Development Tools:</span> GIT, Jupyter Notebook, Postman</li>
+                    <li><span>Office Suite:</span> Microsoft 365 (Word, Excel, PowerPoint, Teams)</li>
+                </ul>    
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+                <ul>
+                    <li><span>Quality Analyst</span><br>Kapture CX (Bangalore)<br>Software testing and quality assurance specialist. Resolved JIRA tickets, conducted API testing with Postman, and developed automated testing solutions using Python, Selenium, and LangChain.<br>May 2025 - Present</li>
                     
-                <li><span>KLA technologies</span><br>VPC Infrastructure Intern.<br>Collaborated with cross-functional teams to design and implement secure VPC (Virtual Private Cloud)<br>
-                architectures with VPN connectivity to on-premises networks.
-                <br>
-                <br>May-June 2024.</li><br>
+                    <li><span>NLP Training Intern</span><br>InternzLearn Academy (Bengaluru)<br>Developed NLP skills in text analysis, language modeling, and machine learning algorithms. Gained hands-on Python programming experience.<br>March-May 2024</li>
+                    
+                    <li><span>Data Testing and Developer Intern</span><br>BLitz-Tech Academy (Gandhipuram, Coimbatore)<br>Worked with YOLO model for object detection in images and video frames. Analyzed model performance and created training datasets.<br>September 2023</li>
                 </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+                <ul>
+                    <li><span><a href="https://github.com/PraneshKannan1203/" target="_blank" rel="noopener">Object Detection with YOLOv8</a></span><br>Real-time object detection system using YOLOv8 model. Detects objects in images and videos with bounding box coordinates and confidence scores. Implements state-of-the-art computer vision algorithms for accurate object localization.</li>
+                    
+                    <li><span><a href="https://github.com/PraneshKannan1203/" target="_blank" rel="noopener">Image Classification with MobileNetV2</a></span><br>Transfer learning implementation using MobileNetV2 for image classification. Features data augmentation with ImageDataGenerator and custom classification layers. Optimized for mobile deployment with high accuracy.</li>
+                    
+                    <li><span><a href="https://github.com/PraneshKannan1203/" target="_blank" rel="noopener">Conversational Document Q&A System with LangChain</a></span><br>RAG-based question-answering system using LangChain framework. Processes PDF documents, creates vector embeddings, and provides contextual responses. Implements retrieval-augmented generation for accurate document queries.</li>
+                    
+                    <li><span><a href="https://github.com/PraneshKannan1203/" target="_blank" rel="noopener">Dozed-off Sleep Inducer IoT System</a></span><br>IoT-based sleep induction system for post-traumatic and mentally disabled individuals. Utilizes audio processing with sounddevice and numpy libraries. Award-winning prototype from InventX 2023 competition.</li>
+                    
+                    <li><span><a href="https://github.com/PraneshKannan1203/" target="_blank" rel="noopener">Healthcare CRM System</a></span><br>Python-based patient management system with JSON data storage. Features patient registration, appointment scheduling, and feedback management. Command-line interface for healthcare workflow automation.</li>
+                    
+                    <li><span><a href="https://github.com/PraneshKannan1203/" target="_blank" rel="noopener">Rainwater Harvest Analysis System</a></span><br>Data analysis project using pandas and matplotlib for hydrological pattern analysis. Processes rainfall datasets to identify trends, seasonal patterns, and precipitation forecasts. Supports sustainable water management decisions.</li>
+                </ul>    
             </div>
             <div class="tab-contents" id="achievements">
                 <ul>
-                    <li><span>Achieving Gold category award.</span><br>In an innovation and research expo InventX 2023 Multimedia university<br>Malaysia.</li><br>
-                    <li><span>Most Voted invention in the Expo.</span><br>For the prototype named DOZED-OFF an IOT Based Sleep Inducer for post traumatic and mentally disturbed people.<br>InventX 2023 Multimedia university<br>Malaysia.</li><br>
-                    <li><span>Best Paper Presentation.</span><br>Inter-College meet<br>KPR college of technology.</li><br>
+                    <li><span>Gold Category Award</span><br>Innovation and Research Expo InventX 2023, Multimedia University Malaysia</li>
+                    <li><span>Most Voted Invention</span><br>For the prototype named "DOZED-OFF" - an IoT Based Sleep Inducer for post-traumatic and mentally disturbed people<br>InventX 2023, Multimedia University Malaysia</li>
+                    <li><span>Best Paper Presentation</span><br>Inter-College Meet, KPR College of Technology</li>
                 </ul>    
             </div>
         </div>
@@ -105,44 +109,74 @@
     </div>    
 </div>
 <script>
-    
-    Var tablinks.documentsGetElementsByClassName("tab-links");
-    Var tablinks.documentsGetElementsByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
+        // Remove active class from all tab links
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
 
-        for(tabcontent of tabcontentss){
+        // Remove active class from all tab contents
+        for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
-            
         }
-        event.currenTarget.classList.add("active-tab");
-        document.getElementsById(tabname).classList.add("active-link");
+        
+        // Add active class to clicked tab link
+        event.currentTarget.classList.add("active-link");
+        
+        // Add active class to corresponding tab content
+        document.getElementById(tabname).classList.add("active-tab");
     }
+
+    // Mobile menu functions
+    function openmenu(){
+        document.getElementById("sidemenu").style.right = "0";
+        document.getElementById("close-menu").style.display = "block";
+        document.body.style.overflow = "hidden"; // Prevent background scrolling
+    }
+
+    function closemenu(){
+        document.getElementById("sidemenu").style.right = "-200px";
+        document.getElementById("close-menu").style.display = "none";
+        document.body.style.overflow = "auto"; // Restore scrolling
+    }
+
+    // Close menu when clicking on a menu item
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuLinks = document.querySelectorAll('#sidemenu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closemenu);
+        });
+    });
 
 </script>
 
-<div class="container">
-        <div class = "contact-left">
-        <h1 class="subtitle">Contact Me </h1>
-        <p><i class="fa-solid fa-paper-plane"></i>praneshkannan996@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i>9600519422</p>
+<div id="contact" class="container">
+    <div class="contact-left">
+        <h1 class="subtitle">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:praneshkannan996@gmail.com">praneshkannan996@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i><a href="tel:+919600519422">9600519422</a></p>
         <div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=61552983570667"><i class="fa-brands fa-facebook"></i></a>
-        <a href="linkedin.com/in/praneshwaran-kannan-338527306"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/praneshwarankannan?igsh=MXZ5dWNoOWIxYWJ3Nw=="><i class="fa-brands fa-instagram"></i></a>   
+            <a href="https://github.com/PraneshKannan1203/" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/praneshwaran-kannan-338527306" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/praneshwarankannan?igsh=MXZ5dWNoOWIxYWJ3Nw==" title="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>   
         </div>
+    </div>
+    <div class="contact-right">
+        <form>
+            <input type="text" name="Name" placeholder="YOUR NAME" required>
+            <input type="email" name="email" placeholder="YOUR EMAIL" required>
+            <textarea name="Message" rows="6" placeholder="YOUR MESSAGE"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
 
-                    <div class = "contact-right"></div>
-                    .<form>
-                        <input type="text" name="Name" Placeholder="YOUR NAME" required>
-                        <input type="email" name="email" Placeholder="YOUR EMAIL" required>
-                        .<textarea name="Message" rows="6" Placeholder="YOUR MESSAGE"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-        </div>
+<footer class="copyright">
+    <p>&copy; 2025 <a href="https://www.github.com/Jaiharan" target="_blank" rel="noopener">Praneshwaran Kannan</a>. All rights reserved. </p>
+</footer>
 
 </body>
 </html>
