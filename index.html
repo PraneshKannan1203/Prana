@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praneshwaran Kannan-Personal Portfolio</title>
-    <link rel="stylesheet"href="style.css">
+    <title>Praneshwaran Kannan - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <div id= "header">
@@ -13,7 +13,7 @@
         <ul>
             <li><a href= "#about">About</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#skill">Skills</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#internship">Internship</a></li>
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -21,8 +21,8 @@
         </ul>
         </nav>
         <div class="header-text">
-             <p> | App Developer | Python Enthusiast | Machine Learning Enthusiast |</p>
-             <h1>Hi, I'm <span>Praneshwaran</span> Kannan<br>From Coimbatore,</h1>
+             <p> App Developer | Python Enthusiast | Machine Learning Enthusiast |</p>
+             <h1>Hi, I'm <span>Praneshwaran</span> Kannan</h1>
         </div>
     </div>
 </div>
@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-            <img src="images/Me.png">
+            <img src="images/Me.png" alt="Praneshwaran Kannan Profile Picture">
             </div>
                 <div class="about-col-2">
                     <h1>About Me</h1>
@@ -45,59 +45,48 @@
                     ensures scalability and reliability. 
                     <br>Lastly, I’ve dipped my toes into Selenium for web automation and testing. Excited to continue learning and contributing to innovative projects.</p> <br>
 
-                    <div id class="tab-titles">
-                        <p class ="tab-links active-link" onclick="opentab('education')">Education</p>
-                        <p class ="tab-links " onclick="opentab('skills')">Skills</p>
-                        <p class ="tab-links " onclick="opentab('internship')">Internship</p>
-                        <p class ="tab-links " onclick="opentab('achievements')">Achievements</p>
-
+                    <div id="tab-titles" class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
                     </div>
                 
-   
             <div class="tab-contents active-tab" id="education">
                 <ul>
-                    <li><span>Under Graduation.</span><br>Hindusthan College Of Arts and Science.<br>B.Sc.Artificial Intelligence & Machine Learning.<br>CGPA-86.2%<br>2022-Present.</li><br>
-                    <li><span>Higher Secondary Schooling.</span><br>R.K.SreeRangammal Kalvi Nilayam Higher Secondary School<br>Percentage-61.5%<br>2020-2022.</li><br>
-                    <li><span>Secondary Schooling.</span><br>Milton Matriculation School.<br>Percentage-61%<br>2020.</li><br>
+                    <li><span>Under Graduation:</span><br>Hindusthan College Of Arts and Science<br>B.Sc. Artificial Intelligence & Machine Learning<br>CGPA: 86.2%<br>2022-Present</li>
+                    <li><span>Higher Secondary Schooling:</span><br>R.K. SreeRangammal Kalvi Nilayam Higher Secondary School<br>Percentage: 61.5%<br>2020-2022</li>
+                    <li><span>Secondary Schooling:</span><br>Milton Matriculation School<br>Percentage: 61%<br>2020</li>
                 </ul>    
-                </div>
+            </div>
             <div class="tab-contents" id="skills">
                 <ul>
-                    <li><span>Testing Tool</span>- Selenium.<br>
-                    <br>
-                    <li><span>RPA Tool</span>-Automation Anywhere.<br>
-                    <br>
-                    <li><span>Programming Skills</span><br>Python, R, C++<br>Dart.Flutter<br><span>Markup Language</span>HTML,CSS.<br>
-                    <br>
-                    <li><span>Technical Skills</span><br>Data models training,<br>Cloud Architecture.MongoDB<br>
-                    <br>
-                    <li><span>Software And tools.</span><br>Microsoft Word,Excel,PowerBI,Powerpoint,<br>Weka.VS Code,Jupyter notebook,Git,GitHub<br>
+                    <li><span>Programming Languages:</span> Python, R, C++, Dart</li>
+                    <li><span>Web Development:</span> HTML, CSS, JavaScript</li>
+                    <li><span>Mobile Development:</span> Flutter, Dart</li>
+                    <li><span>Machine Learning:</span> TensorFlow, Data Model Training</li>
+                    <li><span>Database:</span> MongoDB</li>
+                    <li><span>Cloud Technologies:</span> AWS, Google Cloud</li>
+                    <li><span>Testing Tools:</span> Selenium</li>
+                    <li><span>RPA Tools:</span> Automation Anywhere</li>
+                    <li><span>Development Tools:</span> VS Code, Jupyter Notebook, Git, GitHub</li>
+                    <li><span>Office Suite:</span> Microsoft Word, Excel, PowerBI, PowerPoint, Weka</li>
                 </ul>    
             </div>
             <div class="tab-contents" id="internship">
                 <ul>
-                <li><span>Training and validating</span><br>InternzLearn Academy(Bengaluru).
-                <br>Developed a strong foundation in Natural Language Processing (NLP) and advanced linguistic platforms (LLP),<br>
-                 enhancing skills in text analysis, language modeling, and machine learning algorithms.<br>
-                 Gained hands-on experience with Python programming<br>
-                  <br>March-May 2024.</li><br>
-
-                <li><span>Data Testing and Developer intern</span><br>BLitz-Tech Academy(Gandhipuram, Coimbatore)<br>•	Working with the YOLO model to detect objects within images or 
-                video frames.Analyzing the performance<br>of the model and suggesting improvements.Downloading and labeling images of specific objects to create<br>
-                a dataset for training the YOLO mode<br>
-                <br>September 2023</li><br>
+                    <li><span>NLP Training Intern</span><br>InternzLearn Academy (Bengaluru)<br>Developed a strong foundation in Natural Language Processing (NLP) and advanced linguistic platforms. Enhanced skills in text analysis, language modeling, and machine learning algorithms. Gained hands-on experience with Python programming.<br>March-May 2024</li>
                     
-                <li><span>KLA technologies</span><br>VPC Infrastructure Intern.<br>Collaborated with cross-functional teams to design and implement secure VPC (Virtual Private Cloud)<br>
-                architectures with VPN connectivity to on-premises networks.
-                <br>
-                <br>May-June 2024.</li><br>
+                    <li><span>Data Testing and Developer Intern</span><br>BLitz-Tech Academy (Gandhipuram, Coimbatore)<br>Worked with the YOLO model to detect objects within images and video frames. Analyzed model performance and suggested improvements. Downloaded and labeled images of specific objects to create datasets for training the YOLO model.<br>September 2023</li>
+                    
+                    <li><span>VPC Infrastructure Intern</span><br>KLA Technologies<br>Collaborated with cross-functional teams to design and implement secure VPC (Virtual Private Cloud) architectures with VPN connectivity to on-premises networks.<br>May-June 2024</li>
                 </ul>
             </div>
             <div class="tab-contents" id="achievements">
                 <ul>
-                    <li><span>Achieving Gold category award.</span><br>In an innovation and research expo InventX 2023 Multimedia university<br>Malaysia.</li><br>
-                    <li><span>Most Voted invention in the Expo.</span><br>For the prototype named DOZED-OFF an IOT Based Sleep Inducer for post traumatic and mentally disturbed people.<br>InventX 2023 Multimedia university<br>Malaysia.</li><br>
-                    <li><span>Best Paper Presentation.</span><br>Inter-College meet<br>KPR college of technology.</li><br>
+                    <li><span>Gold Category Award</span><br>Innovation and Research Expo InventX 2023, Multimedia University Malaysia</li>
+                    <li><span>Most Voted Invention</span><br>For the prototype named "DOZED-OFF" - an IoT Based Sleep Inducer for post-traumatic and mentally disturbed people<br>InventX 2023, Multimedia University Malaysia</li>
+                    <li><span>Best Paper Presentation</span><br>Inter-College Meet, KPR College of Technology</li>
                 </ul>    
             </div>
         </div>
@@ -105,44 +94,53 @@
     </div>    
 </div>
 <script>
-    
-    Var tablinks.documentsGetElementsByClassName("tab-links");
-    Var tablinks.documentsGetElementsByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
+        // Remove active class from all tab links
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
 
-        for(tabcontent of tabcontentss){
+        // Remove active class from all tab contents
+        for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
-            
         }
-        event.currenTarget.classList.add("active-tab");
-        document.getElementsById(tabname).classList.add("active-link");
+        
+        // Add active class to clicked tab link
+        event.currentTarget.classList.add("active-link");
+        
+        // Add active class to corresponding tab content
+        document.getElementById(tabname).classList.add("active-tab");
     }
 
 </script>
 
-<div class="container">
-        <div class = "contact-left">
-        <h1 class="subtitle">Contact Me </h1>
+<div id="contact" class="container">
+    <div class="contact-left">
+        <h1 class="subtitle">Contact Me</h1>
         <p><i class="fa-solid fa-paper-plane"></i>praneshkannan996@gmail.com</p>
         <p><i class="fa-solid fa-phone"></i>9600519422</p>
         <div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=61552983570667"><i class="fa-brands fa-facebook"></i></a>
-        <a href="linkedin.com/in/praneshwaran-kannan-338527306"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/praneshwarankannan?igsh=MXZ5dWNoOWIxYWJ3Nw=="><i class="fa-brands fa-instagram"></i></a>   
+            <a href="https://github.com/PraneshKannan1203/" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/praneshwaran-kannan-338527306" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/praneshwarankannan?igsh=MXZ5dWNoOWIxYWJ3Nw==" title="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>   
         </div>
+    </div>
+    <div class="contact-right">
+        <form>
+            <input type="text" name="Name" placeholder="YOUR NAME" required>
+            <input type="email" name="email" placeholder="YOUR EMAIL" required>
+            <textarea name="Message" rows="6" placeholder="YOUR MESSAGE"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
 
-                    <div class = "contact-right"></div>
-                    .<form>
-                        <input type="text" name="Name" Placeholder="YOUR NAME" required>
-                        <input type="email" name="email" Placeholder="YOUR EMAIL" required>
-                        .<textarea name="Message" rows="6" Placeholder="YOUR MESSAGE"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-        </div>
+<footer class="copyright">
+    <p>&copy; 2025 Praneshwaran Kannan. All rights reserved. | Made with <i class="fa-solid fa-heart"></i> by <a href="https://www.github.com/Jaiharan" target="_blank" rel="noopener">Jaiharan</a></p>
+</footer>
 
 </body>
 </html>

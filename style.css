@@ -125,9 +125,24 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 50%;
 }
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
 .tab-contents ul li span{
     color: #ffc400;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
@@ -142,7 +157,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #ffc400;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -158,12 +173,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #ffc400;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #ffc400;
 }
 .contact-right form{
     width: 100%;
@@ -179,6 +194,34 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+
+form button[type="submit"]{
+    width: 100%;
+    background: linear-gradient(45deg, #ffc400, #ffd000);
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form button[type="submit"]:hover{
+    background: linear-gradient(45deg, #ffd000, #ffdc33);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 196, 0, 0.3);
+}
+
+form button[type="submit"]:active{
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(255, 196, 0, 0.2);
+}
+
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
@@ -194,10 +237,10 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #ffc400;
 }
 .copyright a{
-    color: #ff004f;
+    color: #ffc400;
     text-decoration: none;
 }
 /* -----------------css for small screens--------- */
@@ -221,7 +264,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #ffc400;
         position: fixed;
         top: 0;
         right: -200px;
