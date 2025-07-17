@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url("images/My.png");
+    background-image: url("./My.png");
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
@@ -274,7 +274,7 @@ form .btn2{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url("images/My.png");
+        background-image: url("./My.png");
         background-size: 120% auto;
         background-position: 25% 15%;
         background-attachment: scroll;
